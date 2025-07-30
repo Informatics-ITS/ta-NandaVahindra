@@ -1,75 +1,129 @@
 # 🏁 Tugas Akhir (TA) - Final Project
 
-**Nama Mahasiswa**: [Nama Lengkap]  
-**NRP**: [Nomor Registrasi Pokok]  
-**Judul TA**: [Judul Tugas Akhir]  
-**Dosen Pembimbing**: [Nama Dosen]  
-**Dosen Ko-pembimbing**: [Nama Dosen]
+**Nama Mahasiswa**: Made Nanda Wija Vahindra  
+**NRP**: 5025211160  
+**Judul TA**: Pengembangan Dashboard untuk Event Monitoring Berbasis Web 
+dengan Google Sheets API Menggunakan React.js dan Express.js   
+**Dosen Pembimbing**: Dr. Sarwosri, S.Kom., M.T.  
 
 ---
 
 ## 📺 Demo Aplikasi  
-Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):  
 
 [![Demo Aplikasi](https://i.ytimg.com/vi/zIfRMTxRaIs/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)  
 *Klik gambar di atas untuk menonton demo*
 
 ---
 
-*Konten selanjutnya hanya merupakan contoh awalan yang baik. Anda dapat berimprovisasi bila diperlukan.*
-
 ## 🛠 Panduan Instalasi & Menjalankan Software  
 
-### Prasyarat  
-- Daftar dependensi (contoh):
-  - Python 3.10+
-  - Node.js v18+
-  - MySQL 8.0
-  - [Lainnya...]
+Proyek ini terdiri dari dua bagian utama:
 
-### Langkah-langkah  
-1. **Clone Repository**  
+- **Frontend**: React + Vite, dengan otentikasi Firebase  
+- **Backend**: Express.js, terhubung ke Google Sheets API
+
+---
+
+### 🔧 Prasyarat Umum
+
+- Node.js v18+
+- Akun dan kredensial Firebase
+- Google Sheets API + kredensial JSON
+- Git
+
+---
+
+## 📦 Instalasi dan Konfigurasi
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/Informatics-ITS/ta-NandaVahindra.git
+cd ta-NandaVahindra
+```
+
+---
+
+## 🚀 FRONTEND
+
+Terletak di folder `frontend/`
+
+### 📂 Langkah-langkah
+
+1. Masuk ke folder frontend:
    ```bash
-   git clone https://github.com/Informatics-ITS/TA.git
+   cd frontend
    ```
-2. **Instalasi Dependensi**
+
+2. Install dependensi:
    ```bash
-   cd [folder-proyek]
-   pip install -r requirements.txt  # Contoh untuk Python
-   npm install  # Contoh untuk Node.js
+   npm install
    ```
-3. **Konfigurasi**
-- Salin/rename file .env.example menjadi .env
-- Isi variabel lingkungan sesuai kebutuhan (database, API key, dll.)
-4. **Jalankan Aplikasi**
+
+3. Buat file `.env` berdasarkan `.env.example`, lalu isi kredensial Firebase Anda:
+
+   ```env
+   VITE_FIREBASE_API_KEY=...
+   VITE_FIREBASE_AUTH_DOMAIN=...
+   VITE_FIREBASE_PROJECT_ID=...
+   VITE_FIREBASE_APP_ID=...
+   ```
+
+4. Jalankan aplikasi:
    ```bash
-   python main.py  # Contoh untuk Python
-   npm start      # Contoh untuk Node.js
+   npm run dev
    ```
-5. Buka browser dan kunjungi: `http://localhost:3000` (sesuaikan dengan port proyek Anda)
+
+5. Buka browser di:  
+   `http://localhost:5173`
+
+---
+
+## 🔙 BACKEND
+
+Terletak di folder `backend/`
+
+### 📂 Langkah-langkah
+
+1. Masuk ke folder backend:
+   ```bash
+   cd backend
+   ```
+
+2. Install dependensi:
+   ```bash
+   npm install
+   ```
+
+3. Buat file `.env` berdasarkan `.env.example` dan isi:
+
+   ```env
+   GOOGLE_SERVICE_ACCOUNT_CREDENTIALS=./path/to/credentials.json
+   SHEET_ID=...
+   SHEET_NAME=...
+   ```
+
+4. Jalankan server:
+   ```bash
+   node server.js
+   ```
+
+5. Server akan berjalan di:  
+   `http://localhost:8080`
 
 ---
 
 ## 📚 Dokumentasi Tambahan
 
-- [![Dokumentasi API]](docs/api.md)
-- [![Diagram Arsitektur]](docs/architecture.png)
-- [![Struktur Basis Data]](docs/database_schema.sql)
+- [Dokumentasi API](docs/api-docs.md)
+- [Diagram Arsitektur](docs/System%20Architecture.md)
+- [Struktur Data Input](docs/DataInputDMPPN.xlsx)
 
----
-
-## ✅ Validasi
-
-Pastikan proyek memenuhi kriteria berikut sebelum submit:
-- Source code dapat di-build/run tanpa error
-- Video demo jelas menampilkan fitur utama
-- README lengkap dan terupdate
-- Tidak ada data sensitif (password, API key) yang ter-expose
 
 ---
 
 ## ⁉️ Pertanyaan?
 
 Hubungi:
-- Penulis: [email@mahasiswa]
-- Pembimbing Utama: [email@pembimbing]
+- Penulis: 5025211160@student.its.ac.id
+- Pembimbing Utama: sarwosri@if.its.ac.id
