@@ -10,7 +10,7 @@ dengan Google Sheets API Menggunakan React.js dan Express.js
 
 ## 📺 Demo Aplikasi  
 
-[![Demo Aplikasi](https://i.ytimg.com/vi/zIfRMTxRaIs/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)  
+[![Demo Aplikasi](https://github.com/user-attachments/assets/be140c94-b658-4e51-bfb9-eb5730f0374d)](https://www.youtube.com/watch?v=KGVjLKzuH78)  
 *Klik gambar di atas untuk menonton demo*
 
 ---
